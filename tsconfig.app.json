@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": ["node"]  // Ajout de types comme "node" si tu utilises des modules Node.js, ajuster si nécessaire
+  },
+  "files": ["src/main.ts"],
+  "include": [
+    "src/**/*.d.ts",  // Inclut tous les fichiers de définition de type
+    "src/**/*.ts"     // Assure que tous les fichiers TypeScript dans "src" soient pris en compte
+  ]
+}
